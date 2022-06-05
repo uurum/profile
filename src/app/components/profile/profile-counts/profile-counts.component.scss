@@ -1,0 +1,36 @@
+.profile-counts {
+    padding: 50px 0;
+
+    > div {
+        margin: 0 20px;
+        position: relative;
+        padding-left: 40px;
+        display: flex;
+        flex-direction: column;
+        color: #4d4d4d;
+
+        b {
+            font-weight: 500;
+        }
+
+        &:before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 7px;
+            width: 26px;
+            height: 26px;
+        }
+
+        &.jobYears:before {
+            background: url(/assets/images/icons/times.png);
+        }
+        &.certificates:before {
+            background: url(/assets/images/icons/cup.png);
+        }
+        &.internships:before {
+            background: url(/assets/images/icons/internship.png);
+        }
+    }
+}

@@ -1,0 +1,19 @@
+<div class="profile-header" fxLayout="row" fxLayoutAlign="space-between center">
+    <div class="search-input">
+        <input type="text" placeholder="Search Anything" />
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+        <img src="/assets/images/icons/ring.png" alt="notifications" />
+
+        <div class="profile-menu" fxLayout="row" fxLayoutAlign="space-between center">
+            <img class="avatar" src="/assets/images/avatar.png" alt="avatar" />
+            <span>Uğur Yılmaz</span>
+            <mat-icon [matMenuTriggerFor]="menu">more_horiz</mat-icon>
+
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>Settings</button>
+                <button mat-menu-item>Logout</button>
+            </mat-menu>
+        </div>
+    </div>
+</div>

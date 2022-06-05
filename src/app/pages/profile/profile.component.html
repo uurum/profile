@@ -1,0 +1,48 @@
+<app-loading *ngIf="!user; else content"></app-loading>
+
+<ng-template #content>
+
+    <div fxLayout="row" fxLayoutAlign="space-between">
+
+        <div fxFlex="58">
+            <div fxLayout="row">
+
+                <img class="avatar-big" [src]="user.avatar" alt="avatar" />
+                <div class="profile-detail" fxFlex="100">
+                    <div fxLayout="row" fxLayoutAlign="space-between">
+                        <div>
+                            <h3>{{user.name}}</h3>
+                            <span class="state">{{user.state}}</span>
+                        </div>
+                        <div class="user-actions">
+                            <button class="primary">Edit Profile</button>
+                            <button class="secondary">Public View</button>
+                        </div>
+                    </div>
+
+                    <app-read-more [content]="user.summary"></app-read-more>
+
+                </div>
+            </div>
+
+            <app-profile-counts [jobYears]="user.yearsOfExperience" [certificates]="user.certificateCount"
+                [internships]="user.numberOfInternships"></app-profile-counts>
+
+            <mat-tab-group>
+                <mat-tab label="Experience"> 
+                    <img src="/assets/images/experience.png" alt="Experience" />    
+                </mat-tab>
+                <mat-tab label="Biography"> Biography </mat-tab>
+                <mat-tab label="Skills"> Skills </mat-tab>
+                <mat-tab label="Portfolio"> Portfolio </mat-tab>
+            </mat-tab-group>
+
+        </div>
+
+
+        <div fxFlex="38">
+            <app-upgrade></app-upgrade>
+        </div>
+    </div>
+
+</ng-template>

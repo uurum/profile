@@ -1,0 +1,65 @@
+.sidebar {
+    width: 300px;
+    height: 100%;
+    background: #fff;
+
+    .logo {
+        margin: 30px 0 30px 40px;
+    }
+}
+
+nav {
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+
+    a {
+        text-decoration: none;
+        padding: 15px 40px 10px 50px;
+        color: #776767;
+        position: relative;
+        font-size: 17px;
+        margin-bottom: 10px;
+        line-height: 24px;
+
+        &:before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 24px;
+            height: 24px;
+        }
+
+        &.job-feed:before {
+            background: url(/assets/images/icons/job-feed.png);
+        }
+        &.discover-jobs:before {
+            background: url(/assets/images/icons/discover-jobs.png);
+        }
+        &.saved-jobs:before {
+            background: url(/assets/images/icons/saved-jobs.png);
+        }
+        &.proposal:before {
+            background: url(/assets/images/icons/proposal.png);
+        }
+        &.contracts:before {
+            background: url(/assets/images/icons/contracts.png);
+        }
+        &.profile:before {
+            background: url(/assets/images/icons/profile.png);
+        }
+        &.transaction:before {
+            background: url(/assets/images/icons/transaction.png);
+        }
+        &.reports:before {
+            background: url(/assets/images/icons/reports.png);
+        }
+
+        &.active {
+            color: #000;
+        }
+    }
+}

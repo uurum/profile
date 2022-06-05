@@ -1,0 +1,42 @@
+.profile-header {
+    padding: 20px 50px 40px;
+}
+
+.search-input {
+    width: 50%;
+    max-width: 500px;
+    position: relative;
+
+    input {
+        width: 100%;
+        padding: 10px 10px 10px 40px;
+        border-radius: 20px;
+        border: 1px solid #ddd;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &:before {
+        content: "";
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background: url(/assets/images/icons/discover-jobs.png);
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        margin-top: -12px;
+    }
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin: 0 20px 0 30px;
+    border-radius: 10px;
+}
+
+mat-icon {
+    margin-left: 10px;
+}

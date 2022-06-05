@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 700;
+    margin: 0 5px;
+    cursor: pointer;
+
+    &.primary {
+        background: #38a1f7;
+        border: 1px solid #349bd9;;
+    }
+    &.secondary {
+        background: #f7fafb;
+        border: 1px solid #cacfd0;
+        color: #555;
+    }
+}
